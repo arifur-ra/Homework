@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Semantices</title>
+
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4;
+        }
+        #header{
+            margin-bottom: 15px;
+            background:#333 ;
+            color: #fff;
+            padding: 10px;
+        }
+        #main{
+            float:left;
+            width: 69%;
+        }
+        #sidebar{
+            float:right;
+            width:29%;
+        }
+        .clr{
+            clear:both;
+        }
+        #footer{
+            background: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        .card{
+            border: 1px solid #ddd;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .text-center{
+            display:block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!-- Header-->
+<div id="header">
+    <h1> My Website</h1>
+    <p> Just anothher Website</p>
+</div>
+<!--Main part of Body-->
+<main id="main">
+    <section id="welcome" class="card">
+        <h2> Welcome To our Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur impedit consectetur veniam aperiam dolor rerum veritatis, ratione repellat, sint et, assumenda voluptate aspernatur deserunt corrupti! 
+        ure perferendis facere illum?
+        <a href="#" class="text-center">Click for more</a> 
+    </p>
+       
+    </section>
+    <!--Start blog area-->
+    <section id="blog" class="card">
+        <h2>From our Blog</h2>
+        <article class="article">
+            <h4>Article One</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quidem fuga neque ab dolor natus reprehenderit mollitia eaque, eveniet nihil 
+            ullam corrupti quisquam iste asperiores delectus officiis aliquam 
+            minima eius.</p>
+        </article>
+        
+            <article class="article">
+                <h4>Article Two</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quidem fuga neque ab dolor natus reprehenderit mollitia eaque, eveniet nihil 
+                ullam corrupti quisquam iste asperiores delectus officiis aliquam 
+                minima eius.</p>
+            </article>
+            
+    </section>
+
+</main>
+
+ 
+<aside id="sidebar" class="card">
+    <h3>Navigation</h3>
+    <nav>
+    <ul>
+        <li><a href="09_html5_semantics.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    </nav>
+    <hr>
+    <h3>Contact Us</h3>
+        <ul>
+            <li><strong>Adress:</strong> Danziger Staße , 10407 Berlin</li>
+            <li><strong>Phone:</strong>01712341415</li>
+            <li><strong>Email:</strong>ararif_017@yahoo.com </li>
+        </ul>
+</aside>
+   
+    
+  <div class="clr"></div>  
+
+<!--Footer-->
+<footer id="footer" class="text-center">
+
+        <p>copyright &copy;Mywebsite,2020</p>
+    
+    
+</footer>
+
+    
+</body>
+</html>
