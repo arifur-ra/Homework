@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    line-height: 70px;
+    /* background-color: #eee; */
+    background-color: black;
+    
+}
+
+header * {
+    display: inline;
+    height: 70px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    /* margin-left: 20px; */
+    /* padding: 10px; */
+}
+header li a{
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: chartreuse;
+    font-weight: 700;
+}
+ nav ul li a:hover{
+    background-color: rgb(155, 218, 229);
+    color: red;
+    padding: 25px;
+    transition: 0.4s;
+}
+
+
+section {
+    height: 110vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    /* Add this line */
+    background-position: center center;
+    /* Add this line */
+    background-repeat: no-repeat;
+    /* Add this line */
+    background-attachment: fixed;
+    /* Add this line */
+}
+
+section ul li {
+    text-align: left;
+}
+
+#hero .profile-img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: black;
+    color: chartreuse;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+}
+#hero h4{
+    font-size: 20px;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+
+
+/* Add everything below here */
+
+#hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(Images/field.jpg);
+}
+
+#about {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(Images/beach.jpg);
+}
+
+#contact {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(Images/canyon.jpg);
+}
