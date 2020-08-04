@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <style>
+      h2 {
+        text-align: center;
+        border-bottom: 2px solid black;
+        padding: 5px;
+      }
+
+      form {
+        text-align: center;
+      }
+
+      .contactus {
+        width: 30%;
+        padding: 10px;
+        margin: 0 auto;
+        border-radius: 20px;
+        text-align: center;
+        background-color: rgb(168, 204, 204);
+      }
+
+      input,
+      textarea,
+      label,
+      select {
+        margin: 10px 0;
+        padding: 10px;
+      }
+
+      label {
+        color: red;
+      }
+
+      .button input {
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        color: rgb(255, 251, 248);
+        background-color: rgb(165, 125, 50);
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="/contact-form" method="POST" class="contactus">
+      <!--headung -->
+      <h2>Contact Us</h2>
+      <!--input Name and email -->
+      <div>
+        <label for="firstname"> First Name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="Write your First Name"
+          autofocus
+        />
+        <br />
+        <label for="lastname"> Last Name:</label>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Write your Last Name"
+        />
+        <br />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Write your Email"
+        />
+      </div>
+      <!-- textarea -->
+      <div>
+        <label for="message">Give us a message:</label>
+        <textarea name="message" id="message" cols="10" rows="3">
+Write something ..</textarea
+        >
+        <br />
+      </div>
+      <!-- select -->
+      <div>
+        <label for="gender">Gender: </label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <!-- Date and Number -->
+      <div>
+        <label for="age">Age :</label>
+        <input type="number" name="age" id="age" min="10" max="100" />
+      </div>
+
+      <div>
+        <label for="birthday">Date of Birth:</label>
+        <input type="date" name="birthday" id="birthday" />
+      </div>
+      <!-- Radio button -->
+      <div>
+        <label>Membership:</label>
+        <input
+          type="radio"
+          name="membership"
+          id="simple"
+          value="simple"
+        /><label for="simple">Simple</label>
+        <input
+          type="radio"
+          name="membership"
+          id="standard"
+          value="standard"
+          checked
+        />
+        <label for="standard">Standard</label>
+        <input type="radio" name="membership" id="super" value="super" />
+        <label for="super">Super</label>
+      </div>
+      <!-- checkebox -->
+      <div>
+        <label> I would like:</label>
+        <input type="checkbox" name="transport" id="car" value="car" /><label
+          >Car</label
+        >
+        <input type="checkbox" name="transport" id="bike" value="bike" />
+        <label>Bike</label>
+        <input type="checkbox" name="transport" id="train" value="train" />
+        <label for="train">Train</label>
+      </div>
+      <div class="button">
+        <input type="Submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>
